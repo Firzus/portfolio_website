@@ -11,8 +11,8 @@ const NavDropDown = (props) => (
         <AiFillPhone/>
       </DropDownIcon>
       <DropDownTextContainer>
-        <DropDownItemTitle>Phone</DropDownItemTitle>
-        <DropDownItemDesc>Let's get together and have a chat?'</DropDownItemDesc>
+        <DropDownItemTitle>Téléphone</DropDownItemTitle>
+        <DropDownItemDesc>Vous pouvez me contacter</DropDownItemDesc>
       </DropDownTextContainer>
     </DropDownItem>
     <DropDownItem href="#" target="_blank" rel="noreferrer">
@@ -21,7 +21,7 @@ const NavDropDown = (props) => (
       </DropDownIcon>
       <DropDownTextContainer>
         <DropDownItemTitle>Email</DropDownItemTitle>
-        <DropDownItemDesc>If you want to talk jus send a message and I'll get back</DropDownItemDesc>
+        <DropDownItemDesc>Si vous voulez simplement m'envoyer un message</DropDownItemDesc>
       </DropDownTextContainer>
     </DropDownItem>
     <DropDownItem href="#" target="_blank" rel="noreferrer">
@@ -29,8 +29,8 @@ const NavDropDown = (props) => (
       <FaLocationArrow/>
       </DropDownIcon>
       <DropDownTextContainer>
-        <DropDownItemTitle>Address</DropDownItemTitle>
-        <DropDownItemDesc>1405, Angelus Dr, Florissant. Mo</DropDownItemDesc>
+        <DropDownItemTitle>Addresse</DropDownItemTitle>
+        <DropDownItemDesc>Lyon, France</DropDownItemDesc>
       </DropDownTextContainer>
     </DropDownItem>
   </DropDownContainer>
