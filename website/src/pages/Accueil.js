@@ -12,61 +12,64 @@ class Accueil extends Component {
 
                     <Row className='h-100 d-flex align-items-center justify-content-center'>
 
-                        <Col>
+                        <Col md={6} xs={10}>
 
-                            <Row className='p-5'>
-                                <Col>
-                                    <Row>
-                                        <Col>
-                                            <p className='p-2 text-left text-white fs-1 font-link font-weight-bold'>
-                                                Portfolio
-                                            </p>
-                                        </Col>
-                                    </Row>
-                                    <Row>
-                                        <Col>
-                                            <p className='p-2 text-left text-white fs-5 font-link font-italic'>
-                                                PRIEU Lilian
-                                            </p>
-                                        </Col>
-                                    </Row>
-                                    <Row>
-                                        <Col>
-                                            <p className='p-2 text-left text-white fs-3  font-link'>
-                                                20 ans
-                                            </p>
-                                        </Col>
-                                    </Row>
-                                </Col>
-                            </Row>
+                            <Container>
 
-                            <Row className='p-5'>
-                                <Col>
-                                    <Row>
-                                        <Col className='p-2 text-left text-white fs-2  font-link'>
+                                <Row className='d-flex justify-content-center'>
+
+                                    <Col md={3}>
+
+                                        <Row className='pt-5 pb-5 text-left text-white fs-1 font-link'>
+                                            Portfolio
+                                        </Row>
+
+                                        <Row className='pb-1 pt-1 text-left text-white fs-5 font-link'>
+                                            PRIEU Lilian
+                                        </Row>
+
+                                        <Row className='pb-1 pt-1 text-left text-white fs-3 font-link'>
+                                            20 ans
+                                        </Row>
+
+                                    </Col>
+
+                                </Row>
+
+                                <Row className='d-flex justify-content-center'>
+
+                                    <Col md={3}>
+
+                                        <Row className='pb-2 pt-2 text-left text-white fs-2  font-link'>
                                             Web developper
-                                        </Col>
-                                    </Row>
-                                    <Row>
-                                        <Col className='p-2 text-left text-white fs-2  font-link'>
+                                        </Row>
+
+                                        <Row className='pb-2 pt-2 text-left text-white fs-2  font-link'>
                                             Game programmer
-                                        </Col>
-                                    </Row>
-                                    <Row>
-                                        <Col className='p-2 text-left text-white fs-4  font-link'>
+                                        </Row>
+
+                                        <Row className='pb-2 pt-2 text-left text-white fs-5  font-link'>
                                             Objectif : travailler dans l'industrie du jeu vidéo
-                                        </Col>
-                                    </Row>
-                                </Col>
-                            </Row>
+                                        </Row>
+
+                                    </Col>
+
+                                </Row>
+
+                            </Container>
 
                         </Col>
 
-                        <Col className='d-flex align-items-center justify-content-center'>
-                            <Image className="m-5 img-fluid w-50 h-60 bg-white" src='https://www.pexels.com/fr-fr/photo/tour-eiffel-a-paris-france-1461974/' />
+                        <Col md={6} xs={{ order: 'first' }} className='d-flex align-items-center justify-content-center'>
+
+                            <Image
+                                className="bg-white"
+                                src='https://www.pexels.com/fr-fr/photo/tour-eiffel-a-paris-france-1461974/'
+                            />
+
                         </Col>
 
-                    </Row>
+                    </Row >
 
                 </Container >
             </>

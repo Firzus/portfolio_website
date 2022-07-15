@@ -8,7 +8,7 @@ class Header extends Component {
             <>
                 <Navbar bg="white" className='fixed-top' expand="lg">
                     <Container>
-                        <Navbar.Brand className='pr-5' as={NavLink} to="/">
+                        <Navbar.Brand as={NavLink} to="/">
                             <img
                                 src="http://localhost:1337/uploads/logo_portfolio_a6b579b768.png?updated_at=2022-07-14T16:41:48.508Z"
                                 width="50"
