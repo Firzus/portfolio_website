@@ -6,9 +6,9 @@ class Header extends Component {
     render() {
         return (
             <>
-                <Navbar bg="white" expand="lg">
+                <Navbar bg="white" className='fixed-top' expand="lg">
                     <Container>
-                        <Navbar.Brand as={NavLink} to="/">
+                        <Navbar.Brand className='pr-5' as={NavLink} to="/">
                             <img
                                 src="http://localhost:1337/uploads/logo_portfolio_a6b579b768.png?updated_at=2022-07-14T16:41:48.508Z"
                                 width="50"
@@ -20,9 +20,9 @@ class Header extends Component {
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav">
                             <Nav className="me-auto">
-                                <Nav.Link className='fs-3' as={NavLink} to="/">Accueil</Nav.Link>
-                                <Nav.Link className='fs-3' as={NavLink} to="/projets">Projets</Nav.Link>
-                                <Nav.Link className='fs-3' as={NavLink} to="/contact">Contact</Nav.Link>
+                                <Nav.Link className='fs-3 font-link' as={NavLink} to="/">Accueil</Nav.Link>
+                                <Nav.Link className='fs-3 font-link' as={NavLink} to="/projets">Projets</Nav.Link>
+                                <Nav.Link className='fs-3 font-link' as={NavLink} to="/contact">Contact</Nav.Link>
                             </Nav>
                         </Navbar.Collapse>
                     </Container>

@@ -6,8 +6,9 @@ class Contact extends Component {
     render() {
         return (
             <>
+                <Header />
+
                 <Container fluid className='bg-black' style={{ height: '100vh' }}>
-                    <Header />
                     <Row>
                         <Col>
 
