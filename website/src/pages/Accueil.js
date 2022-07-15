@@ -1,24 +1,24 @@
 import React, { Component } from 'react';
-import { Col, Container, Image, Row } from 'react-bootstrap';
+import { Col, Container, Row } from 'react-bootstrap';
 import Header from '../components/Header';
 
 class Accueil extends Component {
     render() {
         return (
             <>
-                <Header />
-
                 <Container fluid className='bg-black' style={{ height: '100vh' }}>
+
+                    <Header />
 
                     <Row className='h-100 d-flex align-items-center justify-content-center'>
 
-                        <Col md={6} xs={10}>
+                        <Col md={6} xs="auto">
 
                             <Container>
 
-                                <Row className='d-flex justify-content-center'>
+                                <Row className='d-flex justify-content-center justify-content-center'>
 
-                                    <Col md={3}>
+                                    <Col md={5}>
 
                                         <Row className='pt-5 pb-5 text-left text-white fs-1 font-link'>
                                             Portfolio
@@ -38,7 +38,7 @@ class Accueil extends Component {
 
                                 <Row className='d-flex justify-content-center'>
 
-                                    <Col md={3}>
+                                    <Col md={5}>
 
                                         <Row className='pb-2 pt-2 text-left text-white fs-2  font-link'>
                                             Web developper
@@ -60,18 +60,23 @@ class Accueil extends Component {
 
                         </Col>
 
-                        <Col md={6} xs={{ order: 'first' }} className='d-flex align-items-center justify-content-center'>
+                        <Col md={{ order: "last" }} xs={{ order: "first" }} >
 
-                            <Image
-                                className="bg-white"
-                                src='https://www.pexels.com/fr-fr/photo/tour-eiffel-a-paris-france-1461974/'
-                            />
+                            <Container className='w-50 h-50 d-flex'>
+
+                                <img
+                                    src='http://localhost:1337/uploads/test_image_1ff195c520.png?updated_at=2022-07-15T14:09:19.213Z'
+                                    className='img-fluid'
+                                    alt='Profil Lilian Prieu'
+                                />
+
+                            </Container>
 
                         </Col>
 
                     </Row >
 
-                </Container >
+                </Container>
             </>
         );
     };
