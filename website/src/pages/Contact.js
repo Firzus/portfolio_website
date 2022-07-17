@@ -8,11 +8,11 @@ class Contact extends Component {
     render() {
         return (
             <>
-                <Container fluid className='bg-black p-0 overflow-hidden' style={{ height: '100vh' }}>
+                <div fluid className='d-flex flex-column  bg-black p-0 overflow-hidden' style={{ height: '100vh' }}>
 
                     <Header as={Row} />
 
-                    <Row className='h-100'>
+                    <Container className='flex-grow-1'>
 
                         <Col className='d-flex justify-content-center align-items-center'>
 
@@ -54,7 +54,7 @@ class Contact extends Component {
 
                         </Col>
 
-                        <Col className=''>
+                        <Col>
                             <Row className='text-white fs-3 font-link'>
                                 Curriculum vitae
                             </Row>
@@ -63,9 +63,9 @@ class Contact extends Component {
                             </Row>
                         </Col>
 
-                    </Row>
+                    </Container>
 
-                </Container>
+                </div>
             </>
         );
     };

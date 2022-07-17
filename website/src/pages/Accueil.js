@@ -6,11 +6,11 @@ class Accueil extends Component {
     render() {
         return (
             <>
-                <Container fluid className='bg-black p-0 overflow-hidden' style={{ height: '100vh' }}>
+                <div fluid className='d-flex flex-column bg-black p-0 overflow-hidden' style={{ height: '100vh' }}>
 
                     <Header as={Row} />
 
-                    <Row className='h-100 d-flex align-items-center justify-content-center'>
+                    <Container className='d-flex flex-grow-1 align-items-center justify-content-center'>
 
                         <Col md={6} xs="auto">
 
@@ -74,9 +74,9 @@ class Accueil extends Component {
 
                         </Col>
 
-                    </Row >
+                    </Container >
 
-                </Container>
+                </div>
             </>
         );
     };
