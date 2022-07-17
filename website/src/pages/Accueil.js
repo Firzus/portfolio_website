@@ -6,7 +6,7 @@ class Accueil extends Component {
     render() {
         return (
             <>
-                <div fluid className='d-flex flex-column bg-black p-0 overflow-hidden' style={{ height: '100vh' }}>
+                <div className='d-flex flex-column bg-black overflow-hidden' style={{ height: '100vh' }}>
 
                     <Header as={Row} />
 

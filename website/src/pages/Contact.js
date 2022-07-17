@@ -8,59 +8,90 @@ class Contact extends Component {
     render() {
         return (
             <>
-                <div fluid className='d-flex flex-column  bg-black p-0 overflow-hidden' style={{ height: '100vh' }}>
+                <div className='d-flex flex-column bg-black overflow-hidden' style={{ height: '100vh' }}>
 
                     <Header as={Row} />
 
-                    <Container className='flex-grow-1'>
+                    <Container className='flex-grow-1 d-flex align-items-center'>
 
-                        <Col className='d-flex justify-content-center align-items-center'>
+                        <Col>
 
-                            <Row className='text-white fs-1 font-link'>
+                            <Row className='p-5 text-center text-white font-link fs-1'>
                                 Contact
                             </Row>
 
                             <Row>
 
-                                <Col className='d-flex align-items-center justify-content-center'>
+                                <Col className='flex-column'>
 
-                                    <a as={Row} target="_blank" href='https://www.google.com/'>
-                                        <AiTwotoneMail className='p-2' size='3em' color='white' />
-                                    </a>
+                                    <Row>
+                                        <a target="_blank" href='https://www.google.com/'>
 
-                                    <a as={Row} target="_blank" href='https://www.google.com/'>
-                                        <AiFillLinkedin className='p-2' size='3em' color='white' />
-                                    </a>
+                                            <AiTwotoneMail
+                                                className='p-2'
+                                                size='5em'
+                                                color='white'
+                                            />
 
-                                    <a as={Row} target="_blank" href='https://www.google.com/'>
-                                        <AiFillGithub className='p-2' size='3em' color='white' />
-                                    </a>
+                                        </a>
+                                    </Row>
+
+                                    <Row>
+                                        <a target="_blank" href='https://www.google.com/'>
+
+                                            <AiTwotoneMail
+                                                className='p-2'
+                                                size='5em'
+                                                color='white'
+                                            />
+
+                                        </a>
+                                    </Row>
+
+                                    <Row>
+                                        <a target="_blank" href='https://www.google.com/'>
+
+                                            <AiTwotoneMail
+                                                className='p-2'
+                                                size='5em'
+                                                color='white'
+                                            />
+
+                                        </a>
+                                    </Row>
 
                                 </Col>
 
-                                <Col>
-                                    <Row className='text-left text-white fs-3 font-link'>
-                                        Mail
-                                    </Row>
-                                    <Row className='text-left text-white fs-3 font-link'>
+                                <Col className='flex-column text-white'>
+
+                                    <div
+                                        className='text-white fs-3 p-2 font-link'
+                                    >
+                                        Email
+                                    </div>
+
+                                    <div
+                                        className='text-white fs-3 p-2 font-link'
+                                    >
                                         Linkedin
-                                    </Row>
-                                    <Row className='text-left text-white fs-3 font-link'>
+                                    </div>
+
+                                    <div
+                                        className='text-white fs-3 p-2 font-link'
+                                    >
                                         GitHub
-                                    </Row>
+                                    </div>
+
                                 </Col>
 
                             </Row>
 
                         </Col>
 
-                        <Col>
-                            <Row className='text-white fs-3 font-link'>
-                                Curriculum vitae
-                            </Row>
-                            <Row>
-                                <Link to="/files/myfile.pdf" target="_blank" download>Download</Link>
-                            </Row>
+                        <Col className='flex-column'>
+
+                            part 2
+
                         </Col>
 
                     </Container>

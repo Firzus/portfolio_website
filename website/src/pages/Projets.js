@@ -6,15 +6,19 @@ class Projets extends Component {
     render() {
         return (
             <>
-                <Header />
+                <div className='d-flex flex-column bg-black overflow-hidden' style={{ height: '100vh' }}>
 
-                <Container fluid className='bg-black' style={{ height: '100vh' }}>
-                    <Row>
-                        <Col>
+                    <Header as={Row} />
 
-                        </Col>
-                    </Row>
-                </Container>
+                    <Container className='flex-grow-1 d-flex align-items-center justify-content-center'>
+
+                        <div>
+                            projets
+                        </div>
+
+                    </Container>
+
+                </div>
             </>
         );
     };
