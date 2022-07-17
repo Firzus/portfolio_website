@@ -6,7 +6,7 @@ class Header extends Component {
     render() {
         return (
             <>
-                <Navbar bg="white" className='fixed-top' expand="lg">
+                <Navbar bg="white" expand="lg">
                     <Container>
                         <Navbar.Brand as={NavLink} to="/">
                             <img

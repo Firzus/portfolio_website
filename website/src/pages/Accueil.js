@@ -6,9 +6,9 @@ class Accueil extends Component {
     render() {
         return (
             <>
-                <Container fluid className='bg-black' style={{ height: '100vh' }}>
+                <Container fluid className='bg-black p-0 overflow-hidden' style={{ height: '100vh' }}>
 
-                    <Header />
+                    <Header as={Row} />
 
                     <Row className='h-100 d-flex align-items-center justify-content-center'>
 

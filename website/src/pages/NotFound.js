@@ -6,7 +6,7 @@ class NotFound extends Component {
     render() {
         return (
             <>
-                <Container fluid className='bg-black d-flex align-items-center justify-content-center' style={{ height: '100vh' }}>
+                <div fluid className='bg-black d-flex align-items-center justify-content-center' style={{ height: '100vh' }}>
                     <Row>
                         <Col>
                             <Row>
@@ -16,12 +16,12 @@ class NotFound extends Component {
                             </Row>
                             <Row>
                                 <Col className='d-flex align-items-center justify-content-center'>
-                                    <Button as={NavLink} to='/' size="lg" variant="outline-light">Accueil</Button>{' '}
+                                    <Button as={NavLink} to='/' size="lg" variant="outline-light">Home</Button>{' '}
                                 </Col>
                             </Row>
                         </Col>
                     </Row>
-                </Container>
+                </div>
             </>
         );
     };
