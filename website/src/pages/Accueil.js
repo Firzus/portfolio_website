@@ -56,11 +56,11 @@ class Accueil extends Component {
 
                         </Col>
 
-                        <Col md={{ span: 4, offset: 1 }} xs={{ span: 8, offset: 2 }} className="d-flex align-items-center jsutify-content-center pt-5" >
+                        <Col md={{ span: 4, offset: 1 }} xs={{ span: 8, offset: 2 }} className="d-flex align-items-center jsutify-content-center pt-5 pb-2" >
 
 
                             <img
-                                src='http://localhost:1337/uploads/test_image_1ff195c520.png?updated_at=2022-07-15T14:09:19.213Z'
+                                src='http://localhost:1337/uploads/profil_a8e9a4dec3.png?updated_at=2022-07-18T15:34:25.862Z'
                                 className='img-fluid'
                                 alt='Profil Lilian Prieu'
                                 as={Row}
