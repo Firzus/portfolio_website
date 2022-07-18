@@ -10,67 +10,61 @@ class Accueil extends Component {
 
                     <Header as={Row} />
 
-                    <Container className='d-flex flex-grow-1 align-items-center justify-content-center'>
+                    <Container className='flex-grow-1 d-block d-sm-flex align-items-center'>
 
-                        <Col md={6} xs="auto">
+                        <Col className='pb-5'>
 
-                            <Container>
+                            <Row className='d-flex justify-content-center justify-content-center'>
 
-                                <Row className='d-flex justify-content-center justify-content-center'>
+                                <Col className='pl-2 pr-2'>
 
-                                    <Col md={5}>
+                                    <div className='pt-5 pb-5 text-white fs-1 font-link'>
+                                        Portfolio
+                                    </div>
 
-                                        <Row className='pt-5 pb-5 text-left text-white fs-1 font-link'>
-                                            Portfolio
-                                        </Row>
+                                    <div className='pb-1 pt-1 text-white fs-5 font-link'>
+                                        PRIEU Lilian
+                                    </div>
 
-                                        <Row className='pb-1 pt-1 text-left text-white fs-5 font-link'>
-                                            PRIEU Lilian
-                                        </Row>
+                                    <div className='pb-1 pt-1 text-white fs-3 font-link'>
+                                        20 ans
+                                    </div>
 
-                                        <Row className='pb-1 pt-1 text-left text-white fs-3 font-link'>
-                                            20 ans
-                                        </Row>
+                                </Col>
 
-                                    </Col>
+                            </Row>
 
-                                </Row>
+                            <Row className='d-flex justify-content-center'>
 
-                                <Row className='d-flex justify-content-center'>
+                                <Col>
 
-                                    <Col md={5}>
+                                    <div className='pb-2 pt-2 text-white fs-2 font-link'>
+                                        Web developper
+                                    </div>
 
-                                        <Row className='pb-2 pt-2 text-left text-white fs-2  font-link'>
-                                            Web developper
-                                        </Row>
+                                    <div className='pb-2 pt-2 text-white fs-2 font-link'>
+                                        Game programmer
+                                    </div>
 
-                                        <Row className='pb-2 pt-2 text-left text-white fs-2  font-link'>
-                                            Game programmer
-                                        </Row>
+                                    <div className='pb-2 pt-2 text-white fs-5 font-link'>
+                                        Objectif : travailler dans l'industrie du jeu vidéo.
+                                    </div>
 
-                                        <Row className='pb-2 pt-2 text-left text-white fs-5  font-link'>
-                                            Objectif : travailler dans l'industrie du jeu vidéo
-                                        </Row>
+                                </Col>
 
-                                    </Col>
-
-                                </Row>
-
-                            </Container>
+                            </Row>
 
                         </Col>
 
-                        <Col md={{ order: "last" }} xs={{ order: "first" }} >
+                        <Col md={{ span: 4, offset: 1 }} xs={{ span: 8, offset: 2 }} className="d-flex align-items-center jsutify-content-center pt-5" >
 
-                            <Container className='w-50 h-50 d-flex'>
 
-                                <img
-                                    src='http://localhost:1337/uploads/test_image_1ff195c520.png?updated_at=2022-07-15T14:09:19.213Z'
-                                    className='img-fluid'
-                                    alt='Profil Lilian Prieu'
-                                />
-
-                            </Container>
+                            <img
+                                src='http://localhost:1337/uploads/test_image_1ff195c520.png?updated_at=2022-07-15T14:09:19.213Z'
+                                className='img-fluid'
+                                alt='Profil Lilian Prieu'
+                                as={Row}
+                            />
 
                         </Col>
 

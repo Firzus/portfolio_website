@@ -4,15 +4,13 @@ import Header from '../components/Header';
 import { AiFillLinkedin, AiFillMail, AiFillGithub } from "react-icons/ai";
 import { Link } from 'react-router-dom';
 
-const ColoredLine = ({ color }) => (
-    <hr
-        style={{
-            color: color,
-            backgroundColor: color,
-            height: 5
-        }}
-    />
-);
+const Mailto = ({ email, subject = '', body = '', children }) => {
+    let params = subject || body ? '?' : '';
+    if (subject) params += `subject=${encodeURIComponent(subject)}`;
+    if (body) params += `${subject ? '&' : ''}body=${encodeURIComponent(body)}`;
+
+    return <a href={`mailto:${email}${params}`}>{children}</a>;
+};
 
 class Contact extends Component {
 
@@ -25,7 +23,7 @@ class Contact extends Component {
 
                     <Container className='flex-grow-1 d-block d-sm-flex align-items-center'>
 
-                        <Col className=''>
+                        <Col>
 
                             <Row className='p-5 d-flex justify-content-center text-white font-link fs-1'>
                                 Contact
@@ -33,17 +31,17 @@ class Contact extends Component {
 
                             <Row>
 
-                                <Row className='d-flex align-items-center'>
+                                <Row className='d-flex align-items-center justify-content-center'>
                                     <Col className='p-3 d-flex justify-content-end'>
 
-                                        <a href='https://www.google.com/'>
+                                        <Mailto email="lprieu@gaming.tech" subject="Hello" body="...">
 
                                             <AiFillMail
                                                 size='4em'
                                                 color='white'
                                             />
 
-                                        </a>
+                                        </Mailto>,
 
                                     </Col>
 
