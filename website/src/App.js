@@ -5,6 +5,7 @@ import Projets from './pages/Projets';
 import NotFound from './pages/NotFound';
 
 function App() {
+
   return (
     <BrowserRouter>
       <Routes>

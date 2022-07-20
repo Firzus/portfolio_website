@@ -10,7 +10,7 @@ class Header extends Component {
                     <Container>
                         <Navbar.Brand as={NavLink} to="/">
                             <img
-                                src="http://localhost:1337/uploads/logo_portfolio_a6b579b768.png?updated_at=2022-07-14T16:41:48.508Z"
+                                src="http://localhost:1337/uploads/logo_portfolio_9a5f42141b.png?updated_at=2022-07-20T15:51:55.649Z"
                                 width="50"
                                 height="50"
                                 className="d-inline-block align-top"
