@@ -41,7 +41,7 @@ class Contact extends Component {
                                                 color='white'
                                             />
 
-                                        </Mailto>,
+                                        </Mailto>
 
                                     </Col>
 

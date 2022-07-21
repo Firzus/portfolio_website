@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Spinner } from 'react-bootstrap';
+import { Carousel } from 'react-bootstrap';
 
 class CarouselProjects extends Component {
 
@@ -12,7 +12,7 @@ class CarouselProjects extends Component {
     }
 
     async componentDidMount() {
-        const response = await fetch('http://localhost:1337/api/projects', {
+        const response = await fetch('http://localhost:1337/api/projects?populate=*', {
             method: 'GET',
             headers: {
                 'Accept': 'application/json',
@@ -29,20 +29,36 @@ class CarouselProjects extends Component {
     render() {
         console.log(this.state.projects);
 
-        if (this.props.loading) {
-            return <Spinner animation="border" variant="light" />
-        }
-
-
         return (
             <>
-                {this.state.projects.map((project) =>
+                <Carousel>
 
-                    <li key={project.id}>
-                        {project.title}
-                    </li>
+                    {this.state.projects.map((u, i) =>
 
-                )}
+                        <Carousel.Item key={i}>
+                            <img
+                                className="d-block w-100"
+                                src={u.attributes.url}
+                                alt="Slide Project"
+                            />
+                            <Carousel.Caption>
+
+                                <h3>
+                                    {u.attributes.title}
+                                </h3>
+
+                                <p>
+                                    {u.attributes.description}
+                                </p>
+
+                            </Carousel.Caption>
+                        </Carousel.Item>
+
+                    )}
+
+
+                </Carousel>
+
             </>
         );
     }
