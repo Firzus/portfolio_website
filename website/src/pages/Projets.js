@@ -1,36 +1,12 @@
 import React, { Component } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
+import CarouselProjects from '../components/CarouselProjects';
 import Header from '../components/Header';
 
 
 class Projets extends Component {
 
-    constructor(props) {
-        super(props)
-        this.state = {
-            projects: [],
-            loading: true
-        }
-    }
-
-    async componentDidMount() {
-        const response = await fetch('http://localhost:1337/api/projects', {
-            method: 'GET',
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
-            }
-        })
-        const projects = await response.json()
-        this.setState({
-            projects: projects.data,
-            loading: false
-        })
-    }
-
     render() {
-
-        console.log(this.state.projects);
 
         return (
             <>
@@ -54,9 +30,9 @@ class Projets extends Component {
 
                                 <Row>
 
-                                    <Col className='fs-1 text-white'>
+                                    <Col>
 
-
+                                        <CarouselProjects />
 
                                     </Col>
 
