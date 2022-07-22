@@ -43,11 +43,11 @@ class CarouselProjects extends Component {
                             />
                             <Carousel.Caption>
 
-                                <h3>
+                                <h3 className='text-black'>
                                     {u.attributes.title}
                                 </h3>
 
-                                <p>
+                                <p className='text-black'>
                                     {u.attributes.description}
                                 </p>
 

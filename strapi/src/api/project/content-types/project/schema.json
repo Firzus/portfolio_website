@@ -4,7 +4,7 @@
   "info": {
     "singularName": "project",
     "pluralName": "projects",
-    "displayName": "Project",
+    "displayName": "project",
     "description": ""
   },
   "options": {
@@ -14,16 +14,16 @@
   "attributes": {
     "title": {
       "type": "string",
-      "unique": true,
-      "required": true
+      "required": true,
+      "unique": true
+    },
+    "url": {
+      "type": "text",
+      "required": true,
+      "unique": true
     },
     "description": {
       "type": "text",
-      "required": true
-    },
-    "url": {
-      "type": "string",
-      "required": true,
       "unique": true
     }
   }

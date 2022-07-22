@@ -60,7 +60,7 @@ class Accueil extends Component {
 
 
                             <img
-                                src='http://localhost:1337/uploads/profil_ddc3c611b5.png?updated_at=2022-07-20T15:51:47.742Z'
+                                src='http://localhost:1337/uploads/profil_3bbde447ab.png?updated_at=2022-07-22T09:36:33.355Z'
                                 className='img-fluid'
                                 alt='Profil Lilian Prieu'
                                 as={Row}
